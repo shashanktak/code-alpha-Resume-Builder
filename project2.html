@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="sylesheet" href="style2.css" />
+    <title> RESUME BULDER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" id="resume-form">
+        <h1 class="text-center my-1 ">RESUME BULIDER</h1>
+        <p class="text-center">BY code alpha</p>
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <h3>Personal Information</h3>
+
+                <div class="form-group">
+                    <label for="namefield">Your Name</label>
+                    <input type="text" id="nameField" placeholder="Enter-here" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group mt-3">
+                <label for="Numberfield">Your contact number</label>
+                <input type="text" id="NumberField" placeholder="Enter-here" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="addressfeild">Your Adresss</label>
+            <textarea id="addressFeild" placeholder="Enter-here" rows="4" class="form-control"></textarea>
+        </div>
+
+        <p class="text-secondary mt-2">Important Details</p>
+        <div class="form-group mt-3">
+            <label for="lkfield">Linkedln Link</label>
+            <input type="text" id="lkField" placeholder="Enter-here" class="form-control" />
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="emfield">Email</label>
+            <input type="text" id="emfield" placeholder="Enter-here" class="form-control" />
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <h3>Professional Imformation</h3>
+
+        <div class="form-group mt-2">
+            <label for="">Objective  </label>
+            <textarea placeholder="Enter-here" id="objectiveField" class="form-control"></textarea>
+        </div>
+
+
+        <div class="form-group mt-2" id="we">
+            <label for="Work Experience">Your Work Experience </label>
+            <textarea placeholder="Enter-here" rows="4" class="form-control weField"></textarea>
+            <div class="container text-center mt-2" id="weAddButton">
+                <button onclick="addNewWeField()" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+        <div class="form-group mt-2" id="ac">
+            <label for="academiC Qualification"> Academic Qualification</label>
+            <textarea placeholder="Enter-here" rows="4" class="form-control eqField"></textarea>
+            <div class="container mt-2" id="acAddButton">
+                <button onclick="addNewAcField()" class=" btn btn-primary">Add</button>
+            </div>
+        </div>
+        <div class="form-group mt-2">
+            <label for="">Certification </label>
+            <textarea placeholder="Enter-here" id="certificationField" rows="4" class="form-control"></textarea>
+        </div>
+
+    </div>
+    <div class="container text-center mt-4">
+        <button onclick="generateresume()" class="btn btn-primary btn-lg">Generate Resume </button>
+    </div>
+    </div>
+
+    </div>
+    <div class="container" id="resume-temp">
+        <div class="row">
+            <div class="col-md-4 text-center py-3 background">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Default_pfp.svg" alt="" class="img-fluid myimg">
+
+
+                <div class="container">
+                    <p id="nameT1"> Ram kumar Sharma</p>
+                    <p id="contactT">9605483145</p>
+                    <p id="addressT">431 -a pratap nagar,Jaipur></p>
+                    <hr>
+
+                    <p>
+                        <a id="linkT" href="#1">https://www.linkedin.com/in</a>
+                    </p>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-8 py-3">
+                <h1 id="nameT2" class="text-center" style="font-weight: 800;">
+                    Ram Kumar Sharma
+                </h1>
+                <div class="card mt-3">
+                    <div class="card-header colorful">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="ObjectiveT">
+                            Seeking a position in life to utilize my skills and abilities and achieve professional growth while being resourceful, innovative and flexible. To add valuable assets to your esteemed organization as an active member.
+                        </p>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header colorful">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            <ul id="weT">
+                                <li>Seeking a position in life to utilize my skills
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>Seeking a position in life to utilize my skills
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>Seeking a position in life to utilize my skills
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header colorful">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            <ul id="aqT">
+                                <li>Seeking a position in life to utilize my skills
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>Seeking a position in life to utilize my skills
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>Seeking a position in life to utilize my skills
+                                </li>
+                            </ul>
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header colorful">
+                        <h3>Certification</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            <ul id="ckT">
+                                <li>Seeking a position in life to utilize my skills
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>Seeking a position in life to utilize my skills
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>Seeking a position in life to utilize my skills
+                                </li>
+                            </ul>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="container mt-2  text-center">
+                    <button onclick="printResmue()" classs="btn btn-primary">Print Resume</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
